@@ -1,0 +1,5 @@
+com\sabarna\repository\UserRepository.class
+com\sabarna\model\User.class
+com\sabarna\DemoApplication.class
+com\sabarna\service\UserService.class
+com\sabarna\controller\UserController.class
