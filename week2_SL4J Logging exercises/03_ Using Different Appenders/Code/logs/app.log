@@ -1,0 +1,4 @@
+23:30:50.460 [main] DEBUG com.example.logging.AppendersExample - Debug message - for developers
+23:30:50.464 [main] INFO  com.example.logging.AppendersExample - Info message - general information
+23:30:50.465 [main] WARN  com.example.logging.AppendersExample - Warning message - something to look at
+23:30:50.465 [main] ERROR com.example.logging.AppendersExample - Error message - something went wrong
