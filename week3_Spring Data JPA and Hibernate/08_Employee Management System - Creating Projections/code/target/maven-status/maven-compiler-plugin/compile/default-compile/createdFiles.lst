@@ -1,8 +1,0 @@
-com\example\employee_management\EmployeeManagementApplication.class
-com\example\employee_management\entity\Department.class
-com\example\employee_management\entity\Employee.class
-com\example\employee_management\config\AuditorAwareImpl.class
-com\example\employee_management\controller\DepartmentController.class
-com\example\employee_management\repository\EmployeeRepository.class
-com\example\employee_management\controller\EmployeeController.class
-com\example\employee_management\repository\DepartmentRepository.class
