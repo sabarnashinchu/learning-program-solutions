@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.cognizant.springlearn.SpringLearnApplicationTests
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.779 s -- in com.cognizant.springlearn.SpringLearnApplicationTests
