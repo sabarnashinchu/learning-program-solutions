@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+     <!-- Departments -->
+    <bean id="depHR" class="com.cognizant.springrest.model.Department">
+        <property name="id" value="1"/>
+        <property name="name" value="HR"/>
+    </bean>
+
+    <bean id="depIT" class="com.cognizant.springrest.model.Department">
+        <property name="id" value="2"/>
+        <property name="name" value="IT"/>
+    </bean>
+
+    <bean id="depFinance" class="com.cognizant.springrest.model.Department">
+        <property name="id" value="3"/>
+        <property name="name" value="Finance"/>
+    </bean>
+
+    <!-- Skills -->
+    <bean id="skillJava" class="com.cognizant.springrest.model.Skill">
+        <property name="id" value="1"/>
+        <property name="name" value="Java"/>
+    </bean>
+
+    <bean id="skillSQL" class="com.cognizant.springrest.model.Skill">
+        <property name="id" value="2"/>
+        <property name="name" value="SQL"/>
+    </bean>
+
+    <bean id="skillAngular" class="com.cognizant.springrest.model.Skill">
+        <property name="id" value="3"/>
+        <property name="name" value="Angular"/>
+    </bean>
+
+    <!-- Employee List -->
+    <util:list id="employeeList" value-type="com.cognizant.springrest.model.Employee">
+        <bean class="com.cognizant.springrest.model.Employee">
+            <property name="id" value="1"/>
+            <property name="name" value="John"/>
+            <property name="salary" value="50000"/>
+            <property name="department" ref="depHR"/>
+            <property name="skills">
+                <util:list>
+                    <ref bean="skillJava"/>
+                    <ref bean="skillSQL"/>
+                </util:list>
+            </property>
+        </bean>
+
+        <bean class="com.cognizant.springrest.model.Employee">
+            <property name="id" value="2"/>
+            <property name="name" value="Jane"/>
+            <property name="salary" value="60000"/>
+            <property name="department" ref="depIT"/>
+            <property name="skills">
+                <util:list>
+                    <ref bean="skillAngular"/>
+                </util:list>
+            </property>
+        </bean>
+
+        <bean class="com.cognizant.springrest.model.Employee">
+            <property name="id" value="3"/>
+            <property name="name" value="David"/>
+            <property name="salary" value="55000"/>
+            <property name="department" ref="depFinance"/>
+            <property name="skills">
+                <util:list>
+                    <ref bean="skillSQL"/>
+                </util:list>
+            </property>
+        </bean>
+
+        <bean class="com.cognizant.springrest.model.Employee">
+            <property name="id" value="4"/>
+            <property name="name" value="Emily"/>
+            <property name="salary" value="62000"/>
+            <property name="department" ref="depIT"/>
+            <property name="skills">
+                <util:list>
+                    <ref bean="skillJava"/>
+                    <ref bean="skillAngular"/>
+                </util:list>
+            </property>
+        </bean>
+    </util:list>
+</beans>
