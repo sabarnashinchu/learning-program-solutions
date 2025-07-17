@@ -1,0 +1,16 @@
+spring:
+  cloud:
+    gateway:
+      server:
+        webflux:
+          routes:
+            - id: load_balanced_route
+              uri: lb://example-service
+              predicates:
+                - Path=/loadbalanced/**
+    loadbalancer:
+      clients:
+        example-service:
+          instances:
+            - uri: http://localhost:8081
+            - uri: http://localhost:8082

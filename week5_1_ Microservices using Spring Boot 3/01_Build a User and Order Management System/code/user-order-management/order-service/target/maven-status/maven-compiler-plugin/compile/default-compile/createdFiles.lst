@@ -1,0 +1,5 @@
+com\example\orderservice\OrderServiceApplication.class
+com\example\orderservice\repository\OrderRepository.class
+com\example\orderservice\feign\UserClient.class
+com\example\orderservice\service\OrderService.class
+com\example\orderservice\model\Order.class

@@ -1,0 +1,4 @@
+spring:
+  security:
+    jwt:
+      secret: KiA5wOYTJKxy5+Z4TduJ6jL5O4KOPxpGd7rJ157YHGs=
