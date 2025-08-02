@@ -1,0 +1,62 @@
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.heading {
+  color: red;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+form {
+  display: inline-block;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+}
+
+input[type="text"],
+textarea {
+  width: 250px;
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #999;
+  border-radius: 3px;
+}
+
+textarea {
+  resize: none;
+  height: 60px;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 5px 15px;
+  font-size: 14px;
+  border: 1px solid #333;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ddd;
+}
